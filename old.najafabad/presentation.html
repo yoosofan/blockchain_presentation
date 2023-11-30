@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.14: http://docutils.sourceforge.net/" />
+<title>بیت‌کوین و زنجیرهٔ بلاکی</title>
+<style type="text/css">
+
+/* Use these two if the main document direction is RTL */
+
+body { direction: rtl; text-align:justify;    font-family:'Nazli', Geneva, sans-serif; font-size: 1.5em;}
+div.sidebar { float: left !important; }
+
+/* The next 3 rules are very useful in documents containing pieces
+of code in english */
+/* Use this if you all your literal blocks (::) are LTR */
+pre {direction: ltr; unicode-bidi: embed; }
+/* Use this if you all your inline literals (``) are LTR */
+tt {direction: ltr; unicode-bidi: embed; }
+/* Use this if you all your interpretted text (`) is LTR */
+cite {direction: ltr; unicode-bidi: embed; }
+
+/* Allow manual direction override by class directive and roles */
+.rtl { direction: rtl; }
+.ltr { direction: ltr; }
+.center {text-align: center;}
+/*.center {display: block; text-align: center;    margin-left: auto; margin-right: auto;}*/
+.toc-backref {     font-size: 1.4em;}
+.section h1{    font-size: 1.7em;}
+.section h2{    font-size: 1.7em;}
+ol {padding:8px; margin: 8px;}
+ol > li {padding:0; margin: 0; list-style-type: persian;}
+
+</style>
+</head>
+<body>
+<div class="document" id="id1">
+<h1 class="title">بیت‌کوین و زنجیرهٔ بلاکی</h1>
+<h2 class="subtitle" id="id2">جلسهٔ نجف آباد ۹۷۰۱۱۷</h2>
+
+<div class="section" id="id3">
+<h1>بانک چگونه کار می‌کند</h1>
+<p>سرویس دهندهٔ مرکزی</p>
+<p>شبکهٔ مرکزی و متمرکز</p>
+<img alt="presentation_files/server-client-communication-2597991.jpg" class="align-center" src="presentation_files/server-client-communication-2597991.jpg" style="width: 650.0px; height: 531.0px;" />
+<p>بازکردن حساب و شمارهٔ حساب</p>
+<p>انجام تراکنش‌ها</p>
+</div>
+<div class="section" id="id4">
+<h1>اجرای نگهداری حساب‌ها به صورت دستی</h1>
+<p>تعدادی فرد دور هم در حال بررسی دادوستدها و نوشتن یکایک آنها هستند تا حساب همه چیز را نگهداری کنند.</p>
+<p>چگونه در کامپیوترها و شبکه می‌توان چنین پخش کردن اطلاعات را داشت؟</p>
+</div>
+<div class="section" id="id5">
+<h1>شبکهٔ نظیر به نظیر</h1>
+<p>آنچه بیشتر از شبکه شنیده‌ایم حالت متمرکز آن است یعنی چیزی بیشتر به صورت سرویس دهنده و سرویس گیرنده یا کارگزار و مشتری.</p>
+<p>در واقع نوع‌های دیگری از شبکه نیز وجود دارد که بستر کنونی اینترنت برای آنها بهتر است.</p>
+<img alt="presentation_files/pto1.png" class="align-center" src="presentation_files/pto1.png" style="width: 441.6px; height: 408.0px;" />
+<p>شبکهٔ نظیر به نظیر بدون ساختار</p>
+<img alt="presentation_files/dynamic-search-algorithm-for-unstructured-peer-to-peer-networks-3-728.jpg" class="align-center" src="presentation_files/dynamic-search-algorithm-for-unstructured-peer-to-peer-networks-3-728.jpg" style="width: 582.4px; height: 355.20000000000005px;" />
+<p>برای نمونه در پرونده‌های تورنت شما به چنین چیزهایی برخورد کرده‌اید که به جای گرفتن یک پرونده از یک سرویس دهندهٔ خاص آن را از جاهای گوناگونی می‌گیرد.</p>
+<img alt="presentation_files/img3File.png" class="align-center" src="presentation_files/img3File.png" style="width: 540.0px; height: 328.8px;" />
+<p>نظیرهای وصل شده به یکی از تورنت‌ها در نرم‌افزار بیت‌تورنت</p>
+<img alt="presentation_files/transmission_peers_connected.png" class="align-center" src="presentation_files/transmission_peers_connected.png" style="width: 429.6px; height: 188.0px;" />
+<div class="section" id="flooding">
+<h2>الگوریتم سیل‌‌گونه Flooding</h2>
+<div class="ltr docutils container">
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Flooding_(computer_networking)">https://en.wikipedia.org/wiki/Flooding_(computer_networking)</a></p>
+<p>Flooding algorithm with ACK messages
+Flooding is a simple computer network routing algorithm in which every incoming packet is sent through every outgoing link except the one it arrived on.</p>
+<p>Flooding is used in bridging and in systems such as Usenet and peer-to-peer file sharing and as part of some routing protocols, including OSPF, DVMRP, and those used in ad-hoc wireless networks (WANETs).</p>
+</div>
+<img alt="presentation_files/Flooding_routing.gif" class="align-center" src="presentation_files/Flooding_routing.gif" style="width: 350.0px; height: 350.0px;" />
+</div>
+</div>
+<div class="section" id="id6">
+<h1>شبکهٔ بیت‌کوین</h1>
+<img alt="presentation_files/low_speed_of_bitcoin_core_synchronization_018-03-09_01-55-36.png" class="align-center" src="presentation_files/low_speed_of_bitcoin_core_synchronization_018-03-09_01-55-36.png" style="width: 614.0px; height: 332.0px;" />
+<p>نمودار اتصالات شبکه و در کنار آن نظیرها</p>
+<img alt="presentation_files/low_speed_of_bitcoin_core_synchronization_2018-03-09_01-53-15.png" class="align-center" src="presentation_files/low_speed_of_bitcoin_core_synchronization_2018-03-09_01-53-15.png" style="width: 654.3000000000001px; height: 443.7px;" />
+</div>
+<div class="section" id="id7">
+<h1>سندهای الکترونیکی</h1>
+<p>تغییرات در سندهای الکترونیکی به نظر بسیار ساده‌تر است بنابراین در نگاه نخست به کارگیری کامیپوترها به شکلی که به هم اعتماد کنند بسیار دشوارتر می‌شوند.</p>
+<p>در حالت متمرکز به مرکز اصلی اعتماد می‌کنیم.</p>
+<p>اعتماد به صورت غیرمتمرکز چگونه انجام شود؟</p>
+<p>عدم تمرکز</p>
+<p>زنجیرهٔ بلاکی غیرقابل تغییر است
+نمی‌توان رکوردهای پیشین را تغییر داد.</p>
+<p>جابجایی پول بدون این که بتوان آن را عوض کرد یا برگرداند.
+نمی‌توان به جایی برگزداند و اگر پولی فرستاده شده دیگر نمی‌تواند برگردد</p>
+<div class="section" id="id8">
+<h2>کمبودها</h2>
+<p>بیت‌کوین فقط امکان پردازش ۴ تراکنش را در ثانیه دارد که بسیار نسبت به سامانه‌های دیگر متمرکز کمتر است.</p>
+<p>اتریوم ۱۵ تراکنش در ثانیه</p>
+<p>افزایش قیمت تراکنش</p>
+<p>ویژگی‌های فنی بیت‌کوین</p>
+<ul class="simple">
+<li>یک شبکهٔ غیرمتمرکز نظیر به نظیر</li>
+<li>یک بانک کامل همهٔ تراکنش‌ها (زنجیرهٔ‌ بلاکی)</li>
+<li>مجموعهٔ قانون‌هایی برای تأیید اعتبار مستقل هر کدام از گره‌ها</li>
+<li>روندی برای رسیدن به یک تواقق همگانی غیرمتمرکز برای تأیید بلاک‌ها و افزودن آنها به زنجیره‌ٔ بلاکی (pow)</li>
+</ul>
+<p>هنگام گرفتن شمارهٔ بیت‌کوین نیازی به ثبت نام در جایی نیست و بدون اتصال به شبکه نیز می‌توانید یک شماره برای خودتان داشته باشید. این شماره با کلید اصلی شمارهٔ حسابش ارتباط دارد.</p>
+<p>یک حساب بیت‌کوین و تراکنش‌هایش در چند جستجو کنندهٔ بلاک‌ها</p>
+<div class="ltr docutils container">
+<p><a class="reference external" href="presentation_files/a_bitcoin_address_and_its_transactions/blockchain_info_17F7SBoF4k9nhHBsu637VGQAsku9X3XDW3.html">blockchain.info</a></p>
+<p><a class="reference external" href="presentation_files/a_bitcoin_address_and_its_transactions/blockexplorer_com_17F7SBo.html">blockexplorer.com</a></p>
+<p><a class="reference external" href="presentation_files/a_bitcoin_address_and_its_transactions/BlockCypher_17F7SBoF4k9nhHBsu637VGQAsku9X3XDW3.html">BlockCypher.com</a></p>
+</div>
+<p>آلیس از جو بیت‌کوین می‌خرد سپس آلیس با بخشی از آن پول یک قهوه از باب می‌خرد و باب نیز آن پول را جای دیگری خرج می‌کند.</p>
+<img alt="presentation_files/mbc2_0204.png" class="align-center" src="presentation_files/mbc2_0204.png" style="width: 720.0px; height: 449.0px;" />
+<p>روش یکم پرداخت که اغلب انجام می‌شود.</p>
+<img alt="presentation_files/mbc2_0205.png" class="align-center" src="presentation_files/mbc2_0205.png" style="width: 453.0px; height: 260.0px;" />
+<p>روش دوم پرداخت</p>
+<img alt="presentation_files/mbc2_0206.png" class="align-center" src="presentation_files/mbc2_0206.png" style="width: 452.5px; height: 242.5px;" />
+<p>روش سوم پرداخت</p>
+<img alt="presentation_files/mbc2_0207.png" class="align-center" src="presentation_files/mbc2_0207.png" style="width: 452.5px; height: 242.5px;" />
+<pre class="code console literal-block">
+<span class="generic output">curl https://blockchain.info/unspent?active=1Cdid9KFAaatwczBwBttQcwXYCpvK8h7FK</span>
+</pre>
+<div class="ltr docutils container">
+<a class="reference external" href="presentation_files/a_bitcoin_address_and_its_transactions/json_17F.json">transaction json</a></div>
+<!-- ::
+
+.. class:: ltr
+
+        .. include:: presentation_files/a_bitcoin_address_and_its_transactions/json_17F.json
+          :code: javascript
+          :number-lines: -->
+<p>بررسی یکی از تراکنش‌ها</p>
+<img alt="presentation_files/a_bitcoin_address_and_its_transactions/transction_29d42adc8fcf71b00318eb3e15b8f3fb54ad7a456d894a3361fbe84f1120c5e4.png" class="align-center" src="presentation_files/a_bitcoin_address_and_its_transactions/transction_29d42adc8fcf71b00318eb3e15b8f3fb54ad7a456d894a3361fbe84f1120c5e4.png" style="width: 769.1999999999999px; height: 390.59999999999997px;" />
+<div class="ltr docutils container">
+<a class="reference external" href="https://blockchain.info/tx/29d42adc8fcf71b00318eb3e15b8f3fb54ad7a456d894a3361fbe84f1120c5e4">tx</a></div>
+<img alt="presentation_files/Block_516635.png" class="align-center" src="presentation_files/Block_516635.png" style="width: 763.1px; height: 379.6px;" />
+<div class="ltr docutils container">
+<p><a class="reference external" href="presentation_files/a_bitcoin_address_and_its_transactions/Bitcoin_Block_516635.html">presentation_files/a_bitcoin_address_and_its_transactions/Bitcoin_Block_516635.html</a></p>
+<p><a class="reference external" href="https://blockchain.info/block-index/1696216">https://blockchain.info/block-index/1696216</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="id9">
+<h1>درهم‌سازی یا «هَش»</h1>
+<p>می‌توان از هر سندی hash گرفت. در کنار برخی برنامه‌هایی که از اینترنت می‌گیرید بویژه پرونده‌های لوح فشرده پرونده‌های کوچکی وجود دارد که با نام md5 یا sha1 دیده می‌شوند و می‌توانید اینها را بررسی کنید. برای اطمینان از این است که پرونده‌ای که گرفته‌اید درست از اینترنت گرفته شده است.</p>
+<p>اجرای عملی تبدیل کردن آن به یک هش</p>
+<pre class="code console literal-block">
+<span class="generic prompt">$</span> cat test_sha256sum.txt
+<span class="generic output">This is a test
+
+</span><span class="generic prompt">$</span> sha256sum test_sha256sum.txt
+<span class="generic output">9d63c3b5b7623d1fa3dc7fd1547313b9546c6d0fbbb6773a420613b7a17995c8  test_sha256sum.txt
+
+</span><span class="generic prompt">$</span> cat test_sha256sum.txt
+<span class="generic output">This is a test.
+
+</span><span class="generic prompt">$</span> sha256sum test_sha256sum.txt
+<span class="generic output">11586d2eb43b73e539caa3d158c883336c0e2c904b309c0c5ffe2c9b83d562a1  test_sha256sum.txt</span>
+</pre>
+<p>هنگام بارگیری برخی از پرونده‌های بزرگ مانند پرونده‌های سیستم عامل‌های رایگانی مانند اوبونتو یک پرونده‌های کوچکی نیز دیده می‌شود.</p>
+<img alt="presentation_files/ubuntu_download_files.png" class="align-center" src="presentation_files/ubuntu_download_files.png" style="width: 717.0px; height: 369.0px;" />
+<p>در زیر محتوای درون پروندهٔ SHA256SUMS نشان داده شده است. همان گونه که می‌بینید شبیه همان عددهایی است که در بالا از روی پروندهٔ کوچک test_sha256sum.txt ساخته شده است.</p>
+<img alt="presentation_files/sha256sum_ubuntu_iso.png" class="align-center" src="presentation_files/sha256sum_ubuntu_iso.png" style="width: 702.9px; height: 80.10000000000001px;" />
+<p>بنابراین برای بررسی کردن این که آیا پرونده به درستی از سرویس دهنده بارگیری شده است یا خیر می‌توان درهم‌سازی شدهٔ همان پرونده را به کمک روش گفته شده در بالا به دست آورد سپس با مقدار داده شده از وب‌گاه مقایسه نمود تا مطمئن شویم درست گرفته شده است یا خیر</p>
+<img alt="presentation_files/CPT-Hashing-File-Transmission.png" class="align-center" src="presentation_files/CPT-Hashing-File-Transmission.png" style="width: 702.5px; height: 777.5px;" />
+<div class="section" id="id10">
+<h2>ویژگی‌های تابع درهم‌سازی</h2>
+<ul class="simple">
+<li>با دادن پیام یکسان به تابع درهم‌سازی همواره یک مقدار به دست می‌آید.</li>
+<li>محاسبهٔ مقدار درهم‌سازی شده از یک پیام باید سریع انجام شود.</li>
+<li>نباید بتوان از مقدار درهم‌سازی شده، پیام اصلی را به دست آورد مگر این که همهٔ پیام‌های ممکن را آزمایش کزد.</li>
+<li>تغییر کوچکی در پیام باید مقدار درهم‌سازی شدهٔ متفاوتی را ایجاد کند.</li>
+<li>نباید بتوان دو پیام را یافت که مقدار درهم‌سازی شدهٔ یکسانی داشته باشند.</li>
+</ul>
+<p>توضیح این که hash چیست</p>
+<p>هدف این است که تراکنش شما نیز به این تراکنش‌ها افزوده شود و امکان تغییر آن در آینده وجود نداشته باشد اکنون یک بخش ساده را دیدید که نشان می‌دهد چگونه درهم سازی باعث می‌شود بتوان اطلاعات به نسبت یکتایی را از یک سند الکترونیکی به دست آورد که تغییر دادن سند اصلی این امضای آن را (همان درهم‌سازی شدهٔ آن را)‌ تغییر می‌دهد.</p>
+</div>
+<div class="section" id="id11">
+<h2>درخت «مرکل»</h2>
+<img alt="presentation_files/Hash_Tree.png" class="align-center" src="presentation_files/Hash_Tree.png" style="width: 770.0px; height: 489.99999999999994px;" />
+<img alt="presentation_files/Bitcoin_Block_Data.png" class="align-center" src="presentation_files/Bitcoin_Block_Data.png" style="width: 720.0px; height: 540.0px;" />
+<img alt="presentation_files/Blockchain_rotate.png" class="align-center" src="presentation_files/Blockchain_rotate.png" style="width: 677.5px; height: 255.0px;" />
+</div>
+</div>
+<div class="section" id="id12">
+<h1>رمزنگاری</h1>
+<p>نیاز به رمزگذاری در طول تاریخ و رمزگشانی</p>
+<p>الگوریتم‌های گوناگون رمزگذاری</p>
+<p>ساده‌ترین حالت داشتن یک کلید است که کل پیام را با آن رمزنگاری کرد. پیام را فرستاد و گیرنده نیز همان کلید را داشته باشد و پیام رمزنگاری شده را با همان کلید رمزگشایی کند.</p>
+<div class="section" id="id13">
+<h2>کلید عمومی و خصوصی</h2>
+<p>تولید کلید عمومی و خصوصی</p>
+<img alt="presentation_files/600px-Public-key-crypto-1.svg.png" class="align-center" src="presentation_files/600px-Public-key-crypto-1.svg.png" style="width: 600.0px; height: 600.0px;" />
+<p>رمزنگاری با کلید عمومی و خصوصی</p>
+<p>شکل یکم</p>
+<img alt="presentation_files/614px-Public_key_encryption.svg.png" class="align-center" src="presentation_files/614px-Public_key_encryption.svg.png" style="width: 614.0px; height: 600.0px;" />
+<p>شکل دوم</p>
+<img alt="presentation_files/ee-crypto-fig-1-public-keypromo.jpg" class="align-center" src="presentation_files/ee-crypto-fig-1-public-keypromo.jpg" style="width: 770.0px; height: 400.0px;" />
+</div>
+<div class="section" id="id14">
+<h2>امضای دیجیتال اسناد</h2>
+<!-- ::
+
+https://commons.wikimedia.org/wiki/File:Digital_Signature_diagram.svg
+
+.. image:: presentation_files/800px-Digital_Signature_diagram.svg.png
+   :align: center
+   :scale: 100% -->
+<!-- ::
+
+https://www.maximintegrated.com/en/app-notes/index.mvp/id/6004 -->
+<img alt="presentation_files/6004Fig01.png" class="align-center" src="presentation_files/6004Fig01.png" style="width: 727.0px; height: 598.0px;" />
+<!-- ::
+
+https://www.cryptocompare.com/wallets/guides/how-do-digital-signatures-in-bitcoin-work/ -->
+<img alt="presentation_files/digital_signature.png" class="align-center" src="presentation_files/digital_signature.png" style="width: 659.4px; height: 410.9px;" />
+<!-- ::
+
+https://gigglehd.com/gg/hard/1569975
+Etash hashing algorithm -->
+</div>
+<div class="section" id="id15">
+<h2>چند کاربرد دیگر</h2>
+<img alt="presentation_files/EECryptoFig1publickeys_large.jpg" class="align-center" src="presentation_files/EECryptoFig1publickeys_large.jpg" style="width: 720.0px; height: 719.1px;" />
+<p>یکی از کاربردهای آن</p>
+<!-- ::
+
+https://stackoverflow.com/questions/13511250/encrypt-the-encrypted-message-by-using-rsa-in-java -->
+<img alt="presentation_files/uigkd.png" class="align-center" src="presentation_files/uigkd.png" style="width: 722.0px; height: 542.0px;" />
+</div>
+</div>
+<div class="section" id="id16">
+<h1>نشانی بیت‌کوین یا شمارهٔ کیف‌پول</h1>
+<img alt="presentation_files/mbc2_0405.png" class="align-center" src="presentation_files/mbc2_0405.png" style="width: 719.4px; height: 855.0px;" />
+</div>
+<div class="section" id="id17">
+<h1>نرم‌افزار بیت‌کوین</h1>
+<p>یک گرهٔ کامل یا Full Node</p>
+<img alt="presentation_files/mbc2_0801.png" class="align-center" src="presentation_files/mbc2_0801.png" style="width: 634.1999999999999px; height: 582.4px;" />
+<p>حالت‌های گوناگون</p>
+<img alt="presentation_files/mbc2_0802.png" class="align-center" src="presentation_files/mbc2_0802.png" style="width: 742.5600000000001px; height: 1062.88px;" />
+<p>بخشی از شبکهٔ بیت‌کوین با انواع گره‌ها</p>
+<img alt="presentation_files/mbc2_0803.png" class="align-center" src="presentation_files/mbc2_0803.png" style="width: 742.5600000000001px; height: 1033.76px;" />
+<p>double spending</p>
+</div>
+<div class="section" id="id18">
+<h1>استخراج کننده‌ها</h1>
+<img alt="presentation_files/japans-dmm-launches-large-scale-domestic-cryptocurrency-mining-farm-and-showroom.png" class="align-center" src="presentation_files/japans-dmm-launches-large-scale-domestic-cryptocurrency-mining-farm-and-showroom.png" style="width: 700.0px; height: 242.89999999999998px;" />
+</div>
+<div class="section" id="id19">
+<h1>اقتصادی</h1>
+<p>به جای اعتماد به بانک‌ها و مؤسسات مالی برای نگه‌داشتن پول و جابجا کردن آن و ایجاد تراکنش‌ها سیستمی که بتواند چنین کاری را انجام دهد. اعتماد کردن به بانک که حتما کار خودش را درست انجام می‌دهد.</p>
+<p>خرید بیت‌کوین</p>
+<p><a class="reference external" href="https://meetup.com/">https://meetup.com/</a>
+<a class="reference external" href="https://localbitcoins.com/">https://localbitcoins.com/</a></p>
+<p>دیگر پول‌هایی که هم اکنون وجود دارد و مراجع رسمی در حال فروش آن هستند مانند وب‌مانی</p>
+</div>
+<div class="section" id="id20">
+<h1>تجارت</h1>
+</div>
+<div class="section" id="id21">
+<h1>مشکلات</h1>
+</div>
+<div class="section" id="id22">
+<h1>دولت</h1>
+</div>
+<div class="section" id="id23">
+<h1>بانک</h1>
+</div>
+<div class="section" id="id24">
+<h1>تغییرات و امکاناتی که فراهم می‌کند</h1>
+</div>
+<div class="section" id="id25">
+<h1>کارهایی که وجود دارد</h1>
+</div>
+<div class="section" id="id26">
+<h1>شیادی‌ها</h1>
+<!-- ::
+
+
+=================================================================
+
+sdfsd
+
+=================================================================
+
+https://www.slideshare.net/RobertMcNally1/introduction-to-bitcoin-15161936
+https://github.com/solegga/blockchaincourse
+http://www.drps.ed.ac.uk/17-18/dpt/cxinfr11144.htm
+https://datatracker.ietf.org/meeting/99/materials/slides-99-sidrops-an-analysis-of-the-applicability-of-blockchain-to-secure-ip-address-allocation-delegation-and-bindings
+
+https://www.slideshare.net/ShannonEWellsMongiov/intro-to-blockchain-slides
+https://www.slideshare.net/latcraft/blockchain-tech-the-journey
+https://coincenter.org/entry/bitcoin-a-primer-for-policymakers
+https://blockchainhub.net/blockchain-technology/
+https://s3.eu-west-2.amazonaws.com/blockchainhub.media/Blockchain+Technology+Handbook.pdf
+https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/170130_BlockchainStudie.pdf
+https://www-05.ibm.com/be/businessconnect/assets/files/Blockchain-A-new-disruption-in-financial-servies.pdf
+https://ep.jhu.edu/files/techtalk-blockchain-slide-deck.pdf
+https://www.slideshare.net/ShannonEWellsMongiov/intro-to-blockchain-slides
+https://blockchainhub.net/blog/infographics/future-web-decentralized/
+https://indico.nikhef.nl/event/823/contribution/3/material/slides/0.pdf
+https://rkroundtable.org/2016/03/11/blockchain-applications-and-implications-the-slides/
+https://www.slideshare.net/JrmeKehrli/the-blockchain-the-technology-behind-bitcoin
+https://en.wikipedia.org/wiki/Merkle_tree
+https://chainpoint.org
+https://github.com/IAIK/merkle-tree
+http://www.electronicdesign.com/embedded/crypto-essentials
+
+chainpoint
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+https://tierion.com/blog/chainpoint-innovations-in-blockchain-timestamp-proofs/
+https://tierion.com/chainpoint
+https://github.com/chainpoint/chainpoint-proof-json-schema
+https://btcproof.info
+https://bitcoinexchangeguide.com/chainpoint/
+https://medium.com/@WayneVaughan/chainpoint-a-standard-blockchain-proof-protocol-79def1c37189
+https://github.com/chainpoint
+https://www.w3.org/community/chainpoint/
+https://www.npmjs.com/package/chainpoint-validate
+https://www.npmjs.com/package/chainpoint-client
+https://en.wikipedia.org/wiki/File:Bitcoin_Block_Data.svg
+https://upload.wikimedia.org/wikipedia/commons/9/98/Blockchain.svg
+https://en.wikipedia.org/wiki/File:Blockchain.svg
+https://www.kmaschta.me/talks/blockchain.html#/
+
+
+=================================================================
+
+ساختن بیت‌کوین با پایتون
+
+https://www.youtube.com/watch?v=3xAO4K7FC6E
+https://www.amazon.com/Building-Bitcoin-Websites-Beginners-Development/dp/153494544X
+
+https://github.com/primal100/pybitcointools/network/members
+https://github.com/wuxingyi/pybitcointools
+https://github.com/primal100/pybitcointools
+https://github.com/marriva/pybitcointools
+
+
+https://www.youtube.com/results?search_query=peer+to+peer+network
+
+http://www.cs.cmu.edu/~dga/15-441/S08/lectures/
+
+https://www.codeproject.com/KB/WCF/614028/pto1.png
+
+https://image.slidesharecdn.com/batch10final-120110033840-phpapp02/95/dynamic-search-algorithm-for-unstructured-peer-to-peer-networks-3-728.jpg?cb=1326167429
+
+
+
+http://img.creativemark.co.uk/uploads/images/821/16821/img3File.png
+
+https://thumbs.dreamstime.com/z/server-client-communication-2597991.jpg
+
+
+
+
+http://coindetect.org/top100
+
+bitcoinz
+
+biblepay
+  cpu mining
+
+ravencoin
+
+
+https://www.youtube.com/watch?v=JWCQ5YRraOc
+RH is the most hypocrite person in cryptocurrency world. He talked about shitcoins and said a lot of bad things about tokens and Ethereum. After all these claims, he started his own token! then use Ethereum for building his token!. What kind of fool may invest in his crazy shit token?
+Security will be the first problem of his shit.
+
+
+============================================
+
+
+https://www.quora.com/What-are-the-best-presentation-available-to-explain-how-Blockchain-works
+
+http://www.inf.ed.ac.uk/teaching/courses/bdl/
+https://github.com/solegga/blockchaincourse
+
+http://db.cs.washington.edu/seminars/cse590q/18wi/index.html
+http://www.cs.wayne.edu/fengwei/16fa-csc6991/slides/22-HAWK.pdf
+
+https://blockchain.berkeley.edu/decal/sp18/fund/
+https://berkeley-blockchain.github.io/cs294-144-s18/
+https://www.isical.ac.in/~rcbose/blockchain2017/
+
+https://en.wikipedia.org/wiki/Blockchain
+https://en.bitcoin.it/wiki/Transaction_fees
+https://www.slideshare.net/peterVG999
+https://www.sphinx-solution.com/services/blockchain-application-development/?utm_source=google&utm_medium=CPA-CPC&utm_campaign=blockchain-services&gclid=Cj0KCQjw4_zVBRDVARIsAFNI9eBoKFdTCTNQ8xVp8VSKNYW1cmnkacjbz6fudxyuqvII6nik4cNSGbMaAr0vEALw_wcB
+
+https://www.coinlab.capital
+http://www.ultimus.com/webinars/blockchain-practical-reality-digital-process-automation-recording-download
+
+
+http://www.ultimus.com/webinars/blockchain-practical-reality-digital-process-automation-recording-download
+http://www.ultimus.com/webcasts
+http://www.hackbama.com/the-blockchain-and-the-future-of-cybersecurity-slides/
+http://www.drps.ed.ac.uk/17-18/dpt/cxinfr11144.htm
+
+http://www.inf.ed.ac.uk/teaching/courses/bdl/
+https://bab.teachable.com/p/ethereum-developer-course
+https://www.slideshare.net/SherminVoshmgir/blockchain-explained
+
+https://www.slideshare.net/RobertMcNally1/introduction-to-bitcoin-15161936
+
+https://cyber.stanford.edu/blockchainconf
+
+http://www.comp.nus.edu.sg/~ooibc/blockbenchp.pdf
+
+https://cyber.stanford.edu/bpase18
+
+https://bab.teachable.com/p/ethereum-developer-course
+
+http://www.treasury.govt.nz/publications/media-speeches/guestlectures/pdfs/tgls-sims-slides.pdf/view
+
+http://www.mueller-eberstein.com/resources/slides/
+
+
+https://www-05.ibm.com/be/businessconnect/assets/files/Blockchain-A-new-disruption-in-financial-servies.pdf
+
+
+https://blockgeeks.com/guides/what-is-blockchain-technology/
+
+
+================================================
+
+
+
+rst2html presentation.txt presentation.html - -stylesheet=../../office/restructuredtext/farsi.css -->
+</div>
+</div>
+</body>
+</html>

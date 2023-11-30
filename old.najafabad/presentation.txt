@@ -1,0 +1,588 @@
+======================================================================
+بیت‌کوین و زنجیرهٔ بلاکی
+======================================================================
+----------------------------------------------------------------------
+جلسهٔ نجف آباد ۹۷۰۱۱۷
+----------------------------------------------------------------------
+
+بانک چگونه کار می‌کند
+======================================================================
+
+سرویس دهندهٔ مرکزی
+
+شبکهٔ مرکزی و متمرکز 
+
+.. image:: presentation_files/server-client-communication-2597991.jpg
+   :align: center
+   :scale: 50%
+
+
+بازکردن حساب و شمارهٔ حساب
+
+انجام تراکنش‌ها
+
+
+اجرای نگهداری حساب‌ها به صورت دستی
+======================================================================
+تعدادی فرد دور هم در حال بررسی دادوستدها و نوشتن یکایک آنها هستند تا حساب همه چیز را نگهداری کنند.
+
+
+چگونه در کامپیوترها و شبکه می‌توان چنین پخش کردن اطلاعات را داشت؟
+
+
+شبکهٔ نظیر به نظیر
+============================================================================
+
+آنچه بیشتر از شبکه شنیده‌ایم حالت متمرکز آن است یعنی چیزی بیشتر به صورت سرویس دهنده و سرویس گیرنده یا کارگزار و مشتری. 
+
+در واقع نوع‌های دیگری از شبکه نیز وجود دارد که بستر کنونی اینترنت برای آنها بهتر است.
+
+.. image:: presentation_files/pto1.png
+   :align: center
+   :scale: 80%
+
+شبکهٔ نظیر به نظیر بدون ساختار
+
+
+.. image:: presentation_files/dynamic-search-algorithm-for-unstructured-peer-to-peer-networks-3-728.jpg
+   :align: center
+   :scale: 80%
+
+
+برای نمونه در پرونده‌های تورنت شما به چنین چیزهایی برخورد کرده‌اید که به جای گرفتن یک پرونده از یک سرویس دهندهٔ خاص آن را از جاهای گوناگونی می‌گیرد.
+
+
+.. image:: presentation_files/img3File.png
+   :align: center
+   :scale: 80%
+
+نظیرهای وصل شده به یکی از تورنت‌ها در نرم‌افزار بیت‌تورنت
+
+.. image:: presentation_files/transmission_peers_connected.png
+   :align: center
+   :scale: 80%
+
+
+
+الگوریتم سیل‌‌گونه Flooding
+------------------------------------------------
+
+..  container:: ltr
+
+    `<https://en.wikipedia.org/wiki/Flooding_(computer_networking)>`_
+
+    Flooding algorithm with ACK messages
+    Flooding is a simple computer network routing algorithm in which every incoming packet is sent through every outgoing link except the one it arrived on.
+
+    Flooding is used in bridging and in systems such as Usenet and peer-to-peer file sharing and as part of some routing protocols, including OSPF, DVMRP, and those used in ad-hoc wireless networks (WANETs).
+
+.. image:: presentation_files/Flooding_routing.gif
+   :align: center
+   :scale: 50%
+
+شبکهٔ بیت‌کوین
+========================================================================
+
+.. image:: presentation_files/low_speed_of_bitcoin_core_synchronization_018-03-09_01-55-36.png
+   :align: center
+   :scale: 100%
+
+نمودار اتصالات شبکه و در کنار آن نظیرها
+
+.. image:: presentation_files/low_speed_of_bitcoin_core_synchronization_2018-03-09_01-53-15.png
+   :align: center
+   :scale: 90%
+
+سندهای الکترونیکی
+========================================================================
+تغییرات در سندهای الکترونیکی به نظر بسیار ساده‌تر است بنابراین در نگاه نخست به کارگیری کامیپوترها به شکلی که به هم اعتماد کنند بسیار دشوارتر می‌شوند. 
+
+در حالت متمرکز به مرکز اصلی اعتماد می‌کنیم.
+
+اعتماد به صورت غیرمتمرکز چگونه انجام شود؟
+
+عدم تمرکز
+
+زنجیرهٔ بلاکی غیرقابل تغییر است
+نمی‌توان رکوردهای پیشین را تغییر داد.
+
+جابجایی پول بدون این که بتوان آن را عوض کرد یا برگرداند.
+نمی‌توان به جایی برگزداند و اگر پولی فرستاده شده دیگر نمی‌تواند برگردد
+
+
+کمبودها
+--------------------------------------------------------------------
+
+بیت‌کوین فقط امکان پردازش ۴ تراکنش را در ثانیه دارد که بسیار نسبت به سامانه‌های دیگر متمرکز کمتر است.
+
+اتریوم ۱۵ تراکنش در ثانیه
+
+افزایش قیمت تراکنش
+
+ویژگی‌های فنی بیت‌کوین
+
+*  یک شبکهٔ غیرمتمرکز نظیر به نظیر
+*  یک بانک کامل همهٔ تراکنش‌ها (زنجیرهٔ‌ بلاکی)
+*  مجموعهٔ قانون‌هایی برای تأیید اعتبار مستقل هر کدام از گره‌ها
+*  روندی برای رسیدن به یک تواقق همگانی غیرمتمرکز برای تأیید بلاک‌ها و افزودن آنها به زنجیره‌ٔ بلاکی (pow)
+
+
+هنگام گرفتن شمارهٔ بیت‌کوین نیازی به ثبت نام در جایی نیست و بدون اتصال به شبکه نیز می‌توانید یک شماره برای خودتان داشته باشید. این شماره با کلید اصلی شمارهٔ حسابش ارتباط دارد.
+
+یک حساب بیت‌کوین و تراکنش‌هایش در چند جستجو کنندهٔ بلاک‌ها
+
+..  container:: ltr
+
+    `blockchain.info <presentation_files/a_bitcoin_address_and_its_transactions/blockchain_info_17F7SBoF4k9nhHBsu637VGQAsku9X3XDW3.html>`_
+
+    `blockexplorer.com <presentation_files/a_bitcoin_address_and_its_transactions/blockexplorer_com_17F7SBo.html>`_
+
+    `BlockCypher.com <presentation_files/a_bitcoin_address_and_its_transactions/BlockCypher_17F7SBoF4k9nhHBsu637VGQAsku9X3XDW3.html>`_
+
+
+آلیس از جو بیت‌کوین می‌خرد سپس آلیس با بخشی از آن پول یک قهوه از باب می‌خرد و باب نیز آن پول را جای دیگری خرج می‌کند.
+
+.. image:: presentation_files/mbc2_0204.png
+   :align: center
+   :scale: 50%
+
+روش یکم پرداخت که اغلب انجام می‌شود.
+
+.. image:: presentation_files/mbc2_0205.png
+   :align: center
+   :scale: 50%
+
+روش دوم پرداخت
+
+.. image:: presentation_files/mbc2_0206.png
+   :align: center
+   :scale: 50%
+
+روش سوم پرداخت
+
+
+.. image:: presentation_files/mbc2_0207.png
+   :align: center
+   :scale: 50%
+
+
+.. code-block:: console
+
+    curl https://blockchain.info/unspent?active=1Cdid9KFAaatwczBwBttQcwXYCpvK8h7FK
+
+
+..  container:: ltr
+
+    `transaction json <presentation_files/a_bitcoin_address_and_its_transactions/json_17F.json>`_
+
+
+.. ::
+
+    .. class:: ltr
+
+	    .. include:: presentation_files/a_bitcoin_address_and_its_transactions/json_17F.json
+	      :code: javascript
+	      :number-lines:
+
+بررسی یکی از تراکنش‌ها
+
+.. image:: presentation_files/a_bitcoin_address_and_its_transactions/transction_29d42adc8fcf71b00318eb3e15b8f3fb54ad7a456d894a3361fbe84f1120c5e4.png
+   :align: center
+   :scale: 60%
+
+..  container:: ltr
+
+    `tx <https://blockchain.info/tx/29d42adc8fcf71b00318eb3e15b8f3fb54ad7a456d894a3361fbe84f1120c5e4>`_
+
+
+
+.. image:: presentation_files/Block_516635.png
+   :align: center
+   :scale: 65%
+
+..  container:: ltr
+
+    `<presentation_files/a_bitcoin_address_and_its_transactions/Bitcoin_Block_516635.html>`_
+
+    `<https://blockchain.info/block-index/1696216>`_
+
+
+درهم‌سازی یا «هَش»
+========================================================
+می‌توان از هر سندی hash گرفت. در کنار برخی برنامه‌هایی که از اینترنت می‌گیرید بویژه پرونده‌های لوح فشرده پرونده‌های کوچکی وجود دارد که با نام md5 یا sha1 دیده می‌شوند و می‌توانید اینها را بررسی کنید. برای اطمینان از این است که پرونده‌ای که گرفته‌اید درست از اینترنت گرفته شده است.
+
+
+اجرای عملی تبدیل کردن آن به یک هش
+
+.. code-block:: console
+
+    $ cat test_sha256sum.txt 
+    This is a test
+
+    $ sha256sum test_sha256sum.txt 
+    9d63c3b5b7623d1fa3dc7fd1547313b9546c6d0fbbb6773a420613b7a17995c8  test_sha256sum.txt
+
+    $ cat test_sha256sum.txt 
+    This is a test.
+
+    $ sha256sum test_sha256sum.txt 
+    11586d2eb43b73e539caa3d158c883336c0e2c904b309c0c5ffe2c9b83d562a1  test_sha256sum.txt
+
+هنگام بارگیری برخی از پرونده‌های بزرگ مانند پرونده‌های سیستم عامل‌های رایگانی مانند اوبونتو یک پرونده‌های کوچکی نیز دیده می‌شود.
+
+.. image:: presentation_files/ubuntu_download_files.png
+   :align: center
+   :scale: 60%
+
+در زیر محتوای درون پروندهٔ SHA256SUMS نشان داده شده است. همان گونه که می‌بینید شبیه همان عددهایی است که در بالا از روی پروندهٔ کوچک test_sha256sum.txt ساخته شده است.
+
+.. image:: presentation_files/sha256sum_ubuntu_iso.png
+   :align: center
+   :scale: 90%
+
+
+
+
+
+بنابراین برای بررسی کردن این که آیا پرونده به درستی از سرویس دهنده بارگیری شده است یا خیر می‌توان درهم‌سازی شدهٔ همان پرونده را به کمک روش گفته شده در بالا به دست آورد سپس با مقدار داده شده از وب‌گاه مقایسه نمود تا مطمئن شویم درست گرفته شده است یا خیر
+
+.. image:: presentation_files/CPT-Hashing-File-Transmission.png
+   :align: center
+   :scale: 250%
+
+
+
+ویژگی‌های تابع درهم‌سازی
+----------------------------------------------------
+
+*  با دادن پیام یکسان به تابع درهم‌سازی همواره یک مقدار به دست می‌آید.
+*  محاسبهٔ مقدار درهم‌سازی شده از یک پیام باید سریع انجام شود.
+*  نباید بتوان از مقدار درهم‌سازی شده، پیام اصلی را به دست آورد مگر این که همهٔ پیام‌های ممکن را آزمایش کزد.
+*  تغییر کوچکی در پیام باید مقدار درهم‌سازی شدهٔ متفاوتی را ایجاد کند.
+*  نباید بتوان دو پیام را یافت که مقدار درهم‌سازی شدهٔ یکسانی داشته باشند.
+
+
+
+توضیح این که hash چیست
+
+
+هدف این است که تراکنش شما نیز به این تراکنش‌ها افزوده شود و امکان تغییر آن در آینده وجود نداشته باشد اکنون یک بخش ساده را دیدید که نشان می‌دهد چگونه درهم سازی باعث می‌شود بتوان اطلاعات به نسبت یکتایی را از یک سند الکترونیکی به دست آورد که تغییر دادن سند اصلی این امضای آن را (همان درهم‌سازی شدهٔ آن را)‌ تغییر می‌دهد.
+
+
+درخت «مرکل»
+------------------------------------------------------
+
+
+.. image:: presentation_files/Hash_Tree.png
+   :align: center
+   :scale: 35%
+
+
+.. image:: presentation_files/Bitcoin_Block_Data.png
+   :align: center
+   :scale: 80%
+
+
+
+.. image:: p resentation_files/Blockchain_rotate.png
+   :align: center
+   :scale: 250%
+
+
+رمزنگاری 
+===================================================================
+نیاز به رمزگذاری در طول تاریخ و رمزگشانی
+
+الگوریتم‌های گوناگون رمزگذاری
+
+ساده‌ترین حالت داشتن یک کلید است که کل پیام را با آن رمزنگاری کرد. پیام را فرستاد و گیرنده نیز همان کلید را داشته باشد و پیام رمزنگاری شده را با همان کلید رمزگشایی کند.
+
+کلید عمومی و خصوصی
+------------------------------------------------------------------
+تولید کلید عمومی و خصوصی
+
+.. image:: presentation_files/600px-Public-key-crypto-1.svg.png
+   :align: center
+   :scale: 100%
+
+
+رمزنگاری با کلید عمومی و خصوصی
+
+شکل یکم
+
+.. image:: presentation_files/614px-Public_key_encryption.svg.png
+   :align: center
+   :scale: 100%
+
+شکل دوم
+
+.. image:: presentation_files/ee-crypto-fig-1-public-keypromo.jpg
+   :align: center
+   :scale: 100%
+
+
+امضای دیجیتال اسناد
+---------------------------------------------
+
+
+..  ::
+
+    https://commons.wikimedia.org/wiki/File:Digital_Signature_diagram.svg
+
+    .. image:: presentation_files/800px-Digital_Signature_diagram.svg.png
+       :align: center
+       :scale: 100%
+
+
+
+..  ::
+
+    https://www.maximintegrated.com/en/app-notes/index.mvp/id/6004
+
+.. image:: presentation_files/6004Fig01.png
+   :align: center
+   :scale: 100%
+
+
+
+..  ::
+
+    https://www.cryptocompare.com/wallets/guides/how-do-digital-signatures-in-bitcoin-work/
+
+.. image:: presentation_files/digital_signature.png
+   :align: center
+   :scale: 70%
+
+..  ::
+
+    https://gigglehd.com/gg/hard/1569975
+    Etash hashing algorithm
+
+چند کاربرد دیگر
+-----------------------------------------------------
+.. image:: presentation_files/EECryptoFig1publickeys_large.jpg
+   :align: center
+   :scale: 90%
+
+
+یکی از کاربردهای آن
+
+.. ::
+
+    https://stackoverflow.com/questions/13511250/encrypt-the-encrypted-message-by-using-rsa-in-java
+
+.. image:: presentation_files/uigkd.png
+   :align: center
+   :scale: 100%
+
+
+نشانی بیت‌کوین یا شمارهٔ کیف‌پول
+============================================================
+.. image:: presentation_files/mbc2_0405.png
+   :align: center
+   :scale: 60%
+
+نرم‌افزار بیت‌کوین
+================================================
+یک گرهٔ کامل یا Full Node
+
+.. image:: presentation_files/mbc2_0801.png
+   :align: center
+   :scale: 70%
+
+حالت‌های گوناگون
+
+.. image:: presentation_files/mbc2_0802.png
+   :align: center
+   :scale: 52%
+
+
+بخشی از شبکهٔ بیت‌کوین با انواع گره‌ها
+
+.. image:: presentation_files/mbc2_0803.png
+   :align: center
+   :scale: 52%
+
+
+double spending
+
+استخراج کننده‌ها
+=================================================================
+
+.. image:: presentation_files/japans-dmm-launches-large-scale-domestic-cryptocurrency-mining-farm-and-showroom.png
+   :align: center
+   :scale: 70%
+
+اقتصادی
+=================================================================
+به جای اعتماد به بانک‌ها و مؤسسات مالی برای نگه‌داشتن پول و جابجا کردن آن و ایجاد تراکنش‌ها سیستمی که بتواند چنین کاری را انجام دهد. اعتماد کردن به بانک که حتما کار خودش را درست انجام می‌دهد.
+
+
+خرید بیت‌کوین
+
+https://meetup.com/
+https://localbitcoins.com/
+
+دیگر پول‌هایی که هم اکنون وجود دارد و مراجع رسمی در حال فروش آن هستند مانند وب‌مانی
+
+تجارت
+=================================================================
+
+مشکلات
+=================================================================
+
+
+دولت
+=================================================================
+
+بانک
+=================================================================
+
+تغییرات و امکاناتی که فراهم می‌کند
+=================================================================
+
+کارهایی که وجود دارد
+=================================================================
+
+شیادی‌ها
+=================================================================
+
+.. ::
+
+    https://www.slideshare.net/RobertMcNally1/introduction-to-bitcoin-15161936
+    https://github.com/solegga/blockchaincourse
+    http://www.drps.ed.ac.uk/17-18/dpt/cxinfr11144.htm
+    https://datatracker.ietf.org/meeting/99/materials/slides-99-sidrops-an-analysis-of-the-applicability-of-blockchain-to-secure-ip-address-allocation-delegation-and-bindings
+
+    https://www.slideshare.net/ShannonEWellsMongiov/intro-to-blockchain-slides
+    https://www.slideshare.net/latcraft/blockchain-tech-the-journey
+    https://coincenter.org/entry/bitcoin-a-primer-for-policymakers
+    https://blockchainhub.net/blockchain-technology/
+    https://s3.eu-west-2.amazonaws.com/blockchainhub.media/Blockchain+Technology+Handbook.pdf
+    https://www.technologiestiftung-berlin.de/fileadmin/daten/media/publikationen/170130_BlockchainStudie.pdf
+    https://www-05.ibm.com/be/businessconnect/assets/files/Blockchain-A-new-disruption-in-financial-servies.pdf
+    https://ep.jhu.edu/files/techtalk-blockchain-slide-deck.pdf
+    https://www.slideshare.net/ShannonEWellsMongiov/intro-to-blockchain-slides
+    https://blockchainhub.net/blog/infographics/future-web-decentralized/
+    https://indico.nikhef.nl/event/823/contribution/3/material/slides/0.pdf
+    https://rkroundtable.org/2016/03/11/blockchain-applications-and-implications-the-slides/
+    https://www.slideshare.net/JrmeKehrli/the-blockchain-the-technology-behind-bitcoin
+    https://en.wikipedia.org/wiki/Merkle_tree
+    https://chainpoint.org
+    https://github.com/IAIK/merkle-tree
+    http://www.electronicdesign.com/embedded/crypto-essentials
+
+    chainpoint
+    ------------------------------------------------------------------
+
+    https://tierion.com/blog/chainpoint-innovations-in-blockchain-timestamp-proofs/
+    https://tierion.com/chainpoint
+    https://github.com/chainpoint/chainpoint-proof-json-schema
+    https://btcproof.info
+    https://bitcoinexchangeguide.com/chainpoint/
+    https://medium.com/@WayneVaughan/chainpoint-a-standard-blockchain-proof-protocol-79def1c37189
+    https://github.com/chainpoint
+    https://www.w3.org/community/chainpoint/
+    https://www.npmjs.com/package/chainpoint-validate
+    https://www.npmjs.com/package/chainpoint-client
+    https://en.wikipedia.org/wiki/File:Bitcoin_Block_Data.svg
+    https://upload.wikimedia.org/wikipedia/commons/9/98/Blockchain.svg
+    https://en.wikipedia.org/wiki/File:Blockchain.svg
+    https://www.kmaschta.me/talks/blockchain.html#/
+
+
+    =================================================================
+
+    ساختن بیت‌کوین با پایتون
+
+    https://www.youtube.com/watch?v=3xAO4K7FC6E
+    https://www.amazon.com/Building-Bitcoin-Websites-Beginners-Development/dp/153494544X
+
+    https://github.com/primal100/pybitcointools/network/members
+    https://github.com/wuxingyi/pybitcointools
+    https://github.com/primal100/pybitcointools
+    https://github.com/marriva/pybitcointools
+
+
+    https://www.youtube.com/results?search_query=peer+to+peer+network
+
+    http://www.cs.cmu.edu/~dga/15-441/S08/lectures/
+
+    https://www.codeproject.com/KB/WCF/614028/pto1.png
+
+    https://image.slidesharecdn.com/batch10final-120110033840-phpapp02/95/dynamic-search-algorithm-for-unstructured-peer-to-peer-networks-3-728.jpg?cb=1326167429
+
+
+
+    http://img.creativemark.co.uk/uploads/images/821/16821/img3File.png
+
+    https://thumbs.dreamstime.com/z/server-client-communication-2597991.jpg
+
+
+    http://coindetect.org/top100
+
+    bitcoinz
+
+    biblepay
+      cpu mining
+
+    ravencoin
+
+    https://www.youtube.com/watch?v=JWCQ5YRraOc
+    RH is the most hypocrite person in cryptocurrency world. He talked about shitcoins and said a lot of bad things about tokens and Ethereum. After all these claims, he started his own token! then use Ethereum for building his token!. What kind of fool may invest in his crazy shit token? 
+    Security will be the first problem of his shit.
+
+
+    https://www.quora.com/What-are-the-best-presentation-available-to-explain-how-Blockchain-works
+
+    http://www.inf.ed.ac.uk/teaching/courses/bdl/
+    https://github.com/solegga/blockchaincourse
+
+    http://db.cs.washington.edu/seminars/cse590q/18wi/index.html
+    http://www.cs.wayne.edu/fengwei/16fa-csc6991/slides/22-HAWK.pdf
+
+    https://blockchain.berkeley.edu/decal/sp18/fund/
+    https://berkeley-blockchain.github.io/cs294-144-s18/
+    https://www.isical.ac.in/~rcbose/blockchain2017/
+
+    https://en.wikipedia.org/wiki/Blockchain
+    https://en.bitcoin.it/wiki/Transaction_fees
+    https://www.slideshare.net/peterVG999
+    https://www.sphinx-solution.com/services/blockchain-application-development/?utm_source=google&utm_medium=CPA-CPC&utm_campaign=blockchain-services&gclid=Cj0KCQjw4_zVBRDVARIsAFNI9eBoKFdTCTNQ8xVp8VSKNYW1cmnkacjbz6fudxyuqvII6nik4cNSGbMaAr0vEALw_wcB
+
+    https://www.coinlab.capital
+    http://www.ultimus.com/webinars/blockchain-practical-reality-digital-process-automation-recording-download
+
+
+    http://www.ultimus.com/webinars/blockchain-practical-reality-digital-process-automation-recording-download
+    http://www.ultimus.com/webcasts
+    http://www.hackbama.com/the-blockchain-and-the-future-of-cybersecurity-slides/
+    http://www.drps.ed.ac.uk/17-18/dpt/cxinfr11144.htm
+
+    http://www.inf.ed.ac.uk/teaching/courses/bdl/
+    https://bab.teachable.com/p/ethereum-developer-course
+    https://www.slideshare.net/SherminVoshmgir/blockchain-explained
+
+    https://www.slideshare.net/RobertMcNally1/introduction-to-bitcoin-15161936
+
+    https://cyber.stanford.edu/blockchainconf
+
+    http://www.comp.nus.edu.sg/~ooibc/blockbenchp.pdf
+
+    https://cyber.stanford.edu/bpase18
+
+    https://bab.teachable.com/p/ethereum-developer-course
+
+    http://www.treasury.govt.nz/publications/media-speeches/guestlectures/pdfs/tgls-sims-slides.pdf/view
+
+    http://www.mueller-eberstein.com/resources/slides/
+
+
+    https://www-05.ibm.com/be/businessconnect/assets/files/Blockchain-A-new-disruption-in-financial-servies.pdf
+
+
+    https://blockgeeks.com/guides/what-is-blockchain-technology/
+
+
+    rst2html presentation.txt presentation.html --stylesheet=../../office/restructuredtext/farsi.css 
+
