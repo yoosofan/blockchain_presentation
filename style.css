@@ -34,6 +34,10 @@ ul, ol, pre.code{
     text-align: left;
 }
 
+img {
+  height: 500px;
+}
+
 /*ul {
     list-style-position: inside;
 }
